@@ -1,4 +1,4 @@
-//Never_yu'Blog -  https://neveryu.github.io/
+//my'Blog -  https://neveryu.github.io/
 //管理员判断开始
 function sskadmin(e) {
     var ssk = '';
