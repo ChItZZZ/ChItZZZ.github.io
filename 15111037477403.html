@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  JSON处理 - chitzzz
+  实现线程安全 - chitzzz
   
   </title>
   
@@ -105,12 +105,14 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>JSON处理</h1>
+          <h1>实现线程安全</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2017/11/12 16:54 下午</span>
+          <span class="date">2017/11/19 23:2 下午</span>
 
+          <span>posted in&nbsp;</span> 
           
+              <span class="posted-in"><a href='Java.html'>Java</a></span>
            
          
           <span class="comments">
@@ -123,19 +125,13 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <pre><code class="language-java">package com.learn;
-
-import com.google.gson.Gson;
-
-public class Test {
-    public static void main(String[] args) {
-        Gson gson = new Gson();
-        User user1 = new User(&quot;nicky&quot;, 12);
-        String jsonString1 = gson.toJson(user1);
-        System.out.println(jsonString1);
-    }
-}
-</code></pre>
+      <ul>
+<li>最简单的方式，使用Synchronization关键字:Java Synchronization介绍</li>
+<li>使用java.util.concurrent.atomic 包中的原子类，例如 AtomicInteger</li>
+<li>使用java.util.concurrent.locks 包中的锁</li>
+<li>使用线程安全的集合ConcurrentHashMap</li>
+<li>使用volatile关键字，保证变量可见性（直接从内存读，而不是从线程cache读）</li>
+</ul>
 
 
     
@@ -146,16 +142,16 @@ public class Test {
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15104861536939.html" 
-          title="Previous Post: java collection">&laquo; java collection</a>
+          <a href="15116267412708.html" 
+          title="Previous Post: 阿里java手册学习笔记">&laquo; 阿里java手册学习笔记</a>
       
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="15104116143325.html" 
-          title="Next Post: Markdown 语法和 MWeb 写作使用说明">Markdown 语法和 MWeb 写作使用说明 &raquo;</a>
+          <a  href="15111021861492.html" 
+          title="Next Post: 离线包">离线包 &raquo;</a>
       
       </p>
         </div>

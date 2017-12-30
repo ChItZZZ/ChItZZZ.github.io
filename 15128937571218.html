@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  JSON处理 - chitzzz
+  java热加载、热部署 - chitzzz
   
   </title>
   
@@ -105,12 +105,14 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>JSON处理</h1>
+          <h1>java热加载、热部署</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2017/11/12 16:54 下午</span>
+          <span class="date">2017/12/10 16:15 下午</span>
 
+          <span>posted in&nbsp;</span> 
           
+              <span class="posted-in"><a href='Java.html'>Java</a></span>
            
          
           <span class="comments">
@@ -123,19 +125,22 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <pre><code class="language-java">package com.learn;
-
-import com.google.gson.Gson;
-
-public class Test {
-    public static void main(String[] args) {
-        Gson gson = new Gson();
-        User user1 = new User(&quot;nicky&quot;, 12);
-        String jsonString1 = gson.toJson(user1);
-        System.out.println(jsonString1);
-    }
-}
+      <pre><code>基于java的类加载器
 </code></pre>
+
+<ul>
+<li><p>热部署重新加载整个程序。</p>
+
+<blockquote>
+<p>生产环境</p>
+</blockquote></li>
+<li><p>热加载 后台进程创一个线程 根据类的时间戳变化 运行时重新加载类class。</p>
+
+<blockquote>
+<p>开发环境<br/>
+难以监控和控制，因为动态替换字节码</p>
+</blockquote></li>
+</ul>
 
 
     
@@ -146,16 +151,16 @@ public class Test {
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15104861536939.html" 
-          title="Previous Post: java collection">&laquo; java collection</a>
+          <a href="15130061979934.html" 
+          title="Previous Post: java类加载">&laquo; java类加载</a>
       
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="15104116143325.html" 
-          title="Next Post: Markdown 语法和 MWeb 写作使用说明">Markdown 语法和 MWeb 写作使用说明 &raquo;</a>
+          <a  href="15117980960153.html" 
+          title="Next Post: shiro">shiro &raquo;</a>
       
       </p>
         </div>

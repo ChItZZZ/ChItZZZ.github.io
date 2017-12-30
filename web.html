@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  JSON处理 - chitzzz
+  web - chitzzz
   
   </title>
   
@@ -96,84 +96,71 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_index').addClass('is_active');
-  });
+	$(function(){
+		$('#menu_item_index').addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-      <div class="markdown-body article-wrap">
-       <div class="article">
-          
-          <h1>JSON处理</h1>
-     
-        <div class="read-more clearfix">
-          <span class="date">2017/11/12 16:54 下午</span>
+	<div class="large-8 medium-8 columns">
+		<div class="markdown-body home-categories">
+		
+			<div class="article">
+                <a class="clearlink" href="15116290053923.html">
+                
+                  <h1>服务端推送</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<ol>
+<li>基于 AJAX 的长轮询（long-polling）方式，服务器Hold一段时间后再返回信息；</li>
+<li>HTTP Streaming，通过iframe和&lt;script&gt;标签完成数据的传输；</li>
+<li>TCP 长连接</li>
+<li>HTML5新引入的WebSocket，可以实现服务器主动发送数据至网页端，它和HTTP一样，是一个基于HTTP的应用层协议，跑的是TCP，所以本质上还是个长连接，双向通信，意味着服务器端和客户端可以同时发送并响应请求，而不再像HTTP的请求和响应</li>
+</ol>
 
-          
-           
-         
-          <span class="comments">
-            
+<p>上述的1和2统称为comet技术，这里有个简单的介绍：Comet：基于 HTTP 长连接的“服务器推”技术</p>
 
-            
-          </span>
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/11/26 0:56 上午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='web.html'>web</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
 
-        </div>
-      </div><!-- article -->
-
-      <div class="article-content">
-      <pre><code class="language-java">package com.learn;
-
-import com.google.gson.Gson;
-
-public class Test {
-    public static void main(String[] args) {
-        Gson gson = new Gson();
-        User user1 = new User(&quot;nicky&quot;, 12);
-        String jsonString1 = gson.toJson(user1);
-        System.out.println(jsonString1);
-    }
-}
-</code></pre>
-
-
-    
-
-      </div>
-
-      <div class="row">
-        <div class="large-6 columns">
-        <p class="text-left" style="padding:15px 0px;">
-      
-          <a href="15104861536939.html" 
-          title="Previous Post: java collection">&laquo; java collection</a>
-      
-        </p>
-        </div>
-        <div class="large-6 columns">
-      <p class="text-right" style="padding:15px 0px;">
-      
-          <a  href="15104116143325.html" 
-          title="Next Post: Markdown 语法和 MWeb 写作使用说明">Markdown 语法和 MWeb 写作使用说明 &raquo;</a>
-      
-      </p>
-        </div>
-      </div>
-      <div class="comments-wrap">
-        <div class="share-comments">
-          
-
-          
-
-          
-        </div>
-      </div>
-    </div><!-- article-wrap -->
-  </div><!-- large 8 -->
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+              
 
 
-
+			<div class="row">
+			  <div class="large-6 columns">
+			  <p class="text-left" style="padding-top:25px;">
+			   
+			  </p>
+			  </div>
+			  <div class="large-6 columns">
+			<p class="text-right" style="padding-top:25px;">
+			
+			</p>
+			  </div>
+			</div>
+		</div>
+	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">

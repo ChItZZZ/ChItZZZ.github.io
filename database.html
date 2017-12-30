@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  JSON处理 - chitzzz
+  database - chitzzz
   
   </title>
   
@@ -96,84 +96,125 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_index').addClass('is_active');
-  });
+	$(function(){
+		$('#menu_item_index').addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-      <div class="markdown-body article-wrap">
-       <div class="article">
-          
-          <h1>JSON处理</h1>
-     
-        <div class="read-more clearfix">
-          <span class="date">2017/11/12 16:54 下午</span>
+	<div class="large-8 medium-8 columns">
+		<div class="markdown-body home-categories">
+		
+			<div class="article">
+                <a class="clearlink" href="15136109654646.html">
+                
+                  <h1>mysql基础</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><img src="media/15136109654646/15136109667717.jpg" alt=""/></p>
 
-          
-           
-         
-          <span class="comments">
-            
+<p>外键：<br/>
+是保证数据一致性的策略<br/>
+索引：<br/>
+是对数据表中一列或多列的值进行排序的一种结构。使用索引可以快速访问数据表的特定信息。索引是进行记录快速定位的一种方法。索引好比目录。索引可以划分为：普通索引、唯一索引、全文索引。</p>
 
-            
-          </span>
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/18 23:29 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='database.html'>database</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
 
-        </div>
-      </div><!-- article -->
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15134776307388.html">
+                
+                  <h1>mysql优化</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><img src="media/15134776307388/15134776355980.jpg" alt=""/></p>
 
-      <div class="article-content">
-      <pre><code class="language-java">package com.learn;
+<p>sql 结构良好<br/>
+索引 适量有效</p>
 
-import com.google.gson.Gson;
+<p>数据表减少冗余 简洁</p>
 
-public class Test {
-    public static void main(String[] args) {
-        Gson gson = new Gson();
-        User user1 = new User(&quot;nicky&quot;, 12);
-        String jsonString1 = gson.toJson(user1);
-        System.out.println(jsonString1);
-    }
-}
-</code></pre>
+<p>系统配置 限制：打开文件数的限制， mysql数据库是基于文件的，每查询一个表都要打开一些文件，文件数达到一定限制，文件就无法打开，就会进行频繁的IO操作</p>
 
+<p>硬件 内存 not cpu <br/>
+io设备 并不能阻塞 数据库锁的机制 成本最高</p>
 
-    
+<p>mysq 数据优化可以从以下几方面进行优化：1、sql及索引优化。2 数据库表结构，根据数据设计查询最优的表结构。3，系统配置优化，对打开文件数和安全的限制。4、硬件，选择最适合数据库的cpu，更快的IO,更大的内存，cpu不是越多越好， IO设备并不能减少锁的机制，所以说硬件的优化成本越高，效果最差。</p>
 
-      </div>
+<p><img src="media/15134776307388/15134785902201.jpg" alt=""/></p>
 
-      <div class="row">
-        <div class="large-6 columns">
-        <p class="text-left" style="padding:15px 0px;">
-      
-          <a href="15104861536939.html" 
-          title="Previous Post: java collection">&laquo; java collection</a>
-      
-        </p>
-        </div>
-        <div class="large-6 columns">
-      <p class="text-right" style="padding:15px 0px;">
-      
-          <a  href="15104116143325.html" 
-          title="Next Post: Markdown 语法和 MWeb 写作使用说明">Markdown 语法和 MWeb 写作使用说明 &raquo;</a>
-      
-      </p>
-        </div>
-      </div>
-      <div class="comments-wrap">
-        <div class="share-comments">
-          
+<p>跟慢查询相关的设置语句。开启慢查询日志：set global slow_query_log=on。<br/>
+如果设置long_query_time发现值没有改变，可以关掉窗口重开查看。<br/>
+如果删除了慢查询日志，需要执行flush logs。<br/>
+开启SQL消耗时间：set profiling=1；查询是否开启：select @@profiling。</p>
 
-          
+<h3 id="toc_0">explain</h3>
 
-          
-        </div>
-      </div>
-    </div><!-- article-wrap -->
-  </div><!-- large 8 -->
+<p><img src="media/15134776307388/15137018884887.jpg" alt=""/></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/17 10:27 上午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='database.html'>database</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+              
 
 
-
+			<div class="row">
+			  <div class="large-6 columns">
+			  <p class="text-left" style="padding-top:25px;">
+			   
+			  </p>
+			  </div>
+			  <div class="large-6 columns">
+			<p class="text-right" style="padding-top:25px;">
+			
+			</p>
+			  </div>
+			</div>
+		</div>
+	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">

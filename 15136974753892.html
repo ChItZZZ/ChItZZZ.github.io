@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  JSON处理 - chitzzz
+  soa架构 - chitzzz
   
   </title>
   
@@ -105,12 +105,14 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>JSON处理</h1>
+          <h1>soa架构</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2017/11/12 16:54 下午</span>
+          <span class="date">2017/12/19 23:31 下午</span>
 
+          <span>posted in&nbsp;</span> 
           
+              <span class="posted-in"><a href='Java.html'>Java</a></span>
            
          
           <span class="comments">
@@ -123,18 +125,25 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <pre><code class="language-java">package com.learn;
+      <p>4、分布系统的基础设施</p>
 
-import com.google.gson.Gson;
+<p>4.1、分布式缓存</p>
 
-public class Test {
-    public static void main(String[] args) {
-        Gson gson = new Gson();
-        User user1 = new User(&quot;nicky&quot;, 12);
-        String jsonString1 = gson.toJson(user1);
-        System.out.println(jsonString1);
-    }
-}
+<pre><code>    Memcache 高性能对象缓存系统，在内存中维护一个巨大的基于key-value的hashtable。可以用来缓存任何数据。(对象通过序列化后，转换成二进制缓存)当空间不够用的时候采用LRU算法淘汰数据。网络连接处理采用libevent,高效低耗。memcache采用的是基于tcp连接的memcache协议，协议可以承载文本行和结构化数据，文本行主要用来传输指令，结构化数据主要用来传输数据。
+    另外一种做法是讲session缓存在一个集群上面，例如memcache集群。这样系统的吞吐量高，而且有利于对session的刷新(session都是有有效期的，需要定期刷新)，但是缺点也显而易见： 一旦cache集群重启，所有内存里面的session将全部丢失。
+
+
+
+   Redis是一个高性能的key-value数据库，也可以做缓存，redis丰富的数据结构，其hash，list，set以及丰富的数据结构和超高的性能以及简单的协议，让Redis能够很好的作为数据库的上游缓存层。但是我们会比较担心Redis的单点问题，单点Redis容量大小总受限于内存，在业务对性能要求比较高的情况下，理想情况下我们希望所有的数据都能在内存里面，不要打到数据库上，所以很自然的就会寻求其他方案。 比如，SSD将内存换成了磁盘，以换取更大的容量。
+</code></pre>
+
+<p>4.2、持久化储存</p>
+
+<pre><code>    Hbase、MySQL、Redis传统的IOE方案： IBM小型机Oracle数据库 EMC持久储存成本很高。传统的数据库提供完整地acid功能，并且提供丰富的内连接外连接关联查询等功能。但是，对于高并发应用来说，有的时候会牺牲关联查询事务数据一致性（降级为最终一致性）。   
+
+   Hbase有更好地伸缩能力，更适合海量数据储存。并发写入十分出色，能够支持多regionserver同时写入。但是其本身对于查询的支持力度有限，比如group by order by join等。   
+
+   Redis是一个key-value类型的数据库，能够支持更高的并发量，而且支持的数据类型也比其他的key-value数据库的数据类型多。
 </code></pre>
 
 
@@ -146,16 +155,16 @@ public class Test {
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15104861536939.html" 
-          title="Previous Post: java collection">&laquo; java collection</a>
+          <a href="15138716544733.html" 
+          title="Previous Post: ">&laquo; </a>
       
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="15104116143325.html" 
-          title="Next Post: Markdown 语法和 MWeb 写作使用说明">Markdown 语法和 MWeb 写作使用说明 &raquo;</a>
+          <a  href="15136109654646.html" 
+          title="Next Post: mysql基础">mysql基础 &raquo;</a>
       
       </p>
         </div>

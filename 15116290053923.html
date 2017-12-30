@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  JSON处理 - chitzzz
+  服务端推送 - chitzzz
   
   </title>
   
@@ -105,12 +105,14 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>JSON处理</h1>
+          <h1>服务端推送</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2017/11/12 16:54 下午</span>
+          <span class="date">2017/11/26 0:56 上午</span>
 
+          <span>posted in&nbsp;</span> 
           
+              <span class="posted-in"><a href='web.html'>web</a></span>
            
          
           <span class="comments">
@@ -123,19 +125,14 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <pre><code class="language-java">package com.learn;
+      <ol>
+<li>基于 AJAX 的长轮询（long-polling）方式，服务器Hold一段时间后再返回信息；</li>
+<li>HTTP Streaming，通过iframe和&lt;script&gt;标签完成数据的传输；</li>
+<li>TCP 长连接</li>
+<li>HTML5新引入的WebSocket，可以实现服务器主动发送数据至网页端，它和HTTP一样，是一个基于HTTP的应用层协议，跑的是TCP，所以本质上还是个长连接，双向通信，意味着服务器端和客户端可以同时发送并响应请求，而不再像HTTP的请求和响应</li>
+</ol>
 
-import com.google.gson.Gson;
-
-public class Test {
-    public static void main(String[] args) {
-        Gson gson = new Gson();
-        User user1 = new User(&quot;nicky&quot;, 12);
-        String jsonString1 = gson.toJson(user1);
-        System.out.println(jsonString1);
-    }
-}
-</code></pre>
+<p>上述的1和2统称为comet技术，这里有个简单的介绍：Comet：基于 HTTP 长连接的“服务器推”技术</p>
 
 
     
@@ -146,16 +143,16 @@ public class Test {
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15104861536939.html" 
-          title="Previous Post: java collection">&laquo; java collection</a>
+          <a href="15117980960153.html" 
+          title="Previous Post: shiro">&laquo; shiro</a>
       
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="15104116143325.html" 
-          title="Next Post: Markdown 语法和 MWeb 写作使用说明">Markdown 语法和 MWeb 写作使用说明 &raquo;</a>
+          <a  href="15116289970489.html" 
+          title="Next Post: "> &raquo;</a>
       
       </p>
         </div>

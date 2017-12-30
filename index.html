@@ -75,6 +75,14 @@
 
     <li><label>Categories</label></li>
 
+        
+            <li><a href="App.html">App</a></li>
+        
+            <li><a href="Java.html">Java</a></li>
+        
+            <li><a href="web.html">web</a></li>
+        
+            <li><a href="database.html">database</a></li>
          
 
       </ul>
@@ -96,6 +104,590 @@
 	<div class="large-8 medium-8 columns">
 		<div class="markdown-body home-categories">
 		
+			<div class="article">
+                <a class="clearlink" href="15138716544733.html">
+                
+                  <h1></h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><img src="media/15138716544733/15138716554782.jpg" alt=""/></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/21 23:54 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='dubbo.html'>dubbo</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15136974753892.html">
+                
+                  <h1>soa架构</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>4、分布系统的基础设施</p>
+
+<p>4.1、分布式缓存</p>
+
+<pre><code>    Memcache 高性能对象缓存系统，在内存中维护一个巨大的基于key-value的hashtable。可以用来缓存任何数据。(对象通过序列化后，转换成二进制缓存)当空间不够用的时候采用LRU算法淘汰数据。网络连接处理采用libevent,高效低耗。memcache采用的是基于tcp连接的memcache协议，协议可以承载文本行和结构化数据，文本行主要用来传输指令，结构化数据主要用来传输数据。
+    另外一种做法是讲session缓存在一个集群上面，例如memcache集群。这样系统的吞吐量高，而且有利于对session的刷新(session都是有有效期的，需要定期刷新)，但是缺点也显而易见： 一旦cache集群重启，所有内存里面的session将全部丢失。
+
+
+
+   Redis是一个高性能的key-value数据库，也可以做缓存，redis丰富的数据结构，其hash，list，set以及丰富的数据结构和超高的性能以及简单的协议，让Redis能够很好的作为数据库的上游缓存层。但是我们会比较担心Redis的单点问题，单点Redis容量大小总受限于内存，在业务对性能要求比较高的情况下，理想情况下我们希望所有的数据都能在内存里面，不要打到数据库上，所以很自然的就会寻求其他方案。 比如，SSD将内存换成了磁盘，以换取更大的容量。
+</code></pre>
+
+<p>4.2、持久化储存</p>
+
+<pre><code>    Hbase、MySQL、Redis传统的IOE方案： IBM小型机Oracle数据库 EMC持久储存成本很高。传统的数据库提供完整地acid功能，并且提供丰富的内连接外连接关联查询等功能。但是，对于高并发应用来说，有的时候会牺牲关联查询事务数据一致性（降级为最终一致性）。   
+
+   Hbase有更好地伸缩能力，更适合海量数据储存。并发写入十分出色，能够支持多regionserver同时写入。但是其本身对于查询的支持力度有限，比如group by order by join等。   
+
+   Redis是一个key-value类型的数据库，能够支持更高的并发量，而且支持的数据类型也比其他的key-value数据库的数据类型多。
+</code></pre>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/19 23:31 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Java.html'>Java</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15136109654646.html">
+                
+                  <h1>mysql基础</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><img src="media/15136109654646/15136109667717.jpg" alt=""/></p>
+
+<p>外键：<br/>
+是保证数据一致性的策略<br/>
+索引：<br/>
+是对数据表中一列或多列的值进行排序的一种结构。使用索引可以快速访问数据表的特定信息。索引是进行记录快速定位的一种方法。索引好比目录。索引可以划分为：普通索引、唯一索引、全文索引。</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/18 23:29 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='database.html'>database</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15134776307388.html">
+                
+                  <h1>mysql优化</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><img src="media/15134776307388/15134776355980.jpg" alt=""/></p>
+
+<p>sql 结构良好<br/>
+索引 适量有效</p>
+
+<p>数据表减少冗余 简洁</p>
+
+<p>系统配置 限制：打开文件数的限制， mysql数据库是基于文件的，每查询一个表都要打开一些文件，文件数达到一定限制，文件就无法打开，就会进行频繁的IO操作</p>
+
+<p>硬件 内存 not cpu <br/>
+io设备 并不能阻塞 数据库锁的机制 成本最高</p>
+
+<p>mysq 数据优化可以从以下几方面进行优化：1、sql及索引优化。2 数据库表结构，根据数据设计查询最优的表结构。3，系统配置优化，对打开文件数和安全的限制。4、硬件，选择最适合数据库的cpu，更快的IO,更大的内存，cpu不是越多越好， IO设备并不能减少锁的机制，所以说硬件的优化成本越高，效果最差。</p>
+
+<p><img src="media/15134776307388/15134785902201.jpg" alt=""/></p>
+
+<p>跟慢查询相关的设置语句。开启慢查询日志：set global slow_query_log=on。<br/>
+如果设置long_query_time发现值没有改变，可以关掉窗口重开查看。<br/>
+如果删除了慢查询日志，需要执行flush logs。<br/>
+开启SQL消耗时间：set profiling=1；查询是否开启：select @@profiling。</p>
+
+<h3 id="toc_0">explain</h3>
+
+<p><img src="media/15134776307388/15137018884887.jpg" alt=""/></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/17 10:27 上午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='database.html'>database</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15134373686469.html">
+                
+                  <h1>？？</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><img src="media/15134373686469/15134373711476.jpg" alt=""/></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/16 23:16 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Java.html'>Java</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15134352008256.html">
+                
+                  <h1>序列化 & transient</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><a href="http://www.cnblogs.com/lanxuezaipiao/p/3369962.html">http://www.cnblogs.com/lanxuezaipiao/p/3369962.html</a></p>
+
+<blockquote>
+<p>总之，java 的transient关键字为我们提供了便利，你只需要实现Serilizable接口，将不需要序列化的属性前添加关键字transient，序列化对象的时候，这个属性就不会序列化到指定的目的地中。</p>
+
+<p>第三点确实没错（一个静态变量不管是否被transient修饰，均不能被序列化），反序列化后类中static型变量username的值为当前JVM中对应static变量的值，这个值是JVM中的不是反序列化得出的</p>
+
+<p>在Java中，对象的序列化可以通过实现两种接口来实现，若实现的是Serializable接口，则所有的序列化将会自动进行，若实现的是Externalizable接口，则没有任何东西可以自动序列化，需要在writeExternal方法中进行手工指定所要序列化的变量，这与是否被transient修饰无关</p>
+</blockquote>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/16 22:40 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Java.html'>Java</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15132648898711.html">
+                
+                  <h1>Java transient关键字使用小记</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><a href="http://www.cnblogs.com/lanxuezaipiao/p/3369962.html">http://www.cnblogs.com/lanxuezaipiao/p/3369962.html</a></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/14 23:21 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Java.html'>Java</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15130061979934.html">
+                
+                  <h1>java类加载</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><img src="media/15130061979934/15130062030767.jpg" alt=""/></p>
+
+<p>类加载器加载class文件到jvm中运行</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/11 23:29 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Java.html'>Java</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15128937571218.html">
+                
+                  <h1>java热加载、热部署</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<pre><code>基于java的类加载器
+</code></pre>
+
+<ul>
+<li><p>热部署重新加载整个程序。</p>
+
+<blockquote>
+<p>生产环境</p>
+</blockquote></li>
+<li><p>热加载 后台进程创一个线程 根据类的时间戳变化 运行时重新加载类class。</p>
+
+<blockquote>
+<p>开发环境<br/>
+难以监控和控制，因为动态替换字节码</p>
+</blockquote></li>
+</ul>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/12/10 16:15 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Java.html'>Java</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15117980960153.html">
+                
+                  <h1>shiro</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><img src="media/15117980960153/15117980992411.jpg" alt=""/></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/11/27 23:54 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Java.html'>Java</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15116290053923.html">
+                
+                  <h1>服务端推送</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<ol>
+<li>基于 AJAX 的长轮询（long-polling）方式，服务器Hold一段时间后再返回信息；</li>
+<li>HTTP Streaming，通过iframe和&lt;script&gt;标签完成数据的传输；</li>
+<li>TCP 长连接</li>
+<li>HTML5新引入的WebSocket，可以实现服务器主动发送数据至网页端，它和HTTP一样，是一个基于HTTP的应用层协议，跑的是TCP，所以本质上还是个长连接，双向通信，意味着服务器端和客户端可以同时发送并响应请求，而不再像HTTP的请求和响应</li>
+</ol>
+
+<p>上述的1和2统称为comet技术，这里有个简单的介绍：Comet：基于 HTTP 长连接的“服务器推”技术</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/11/26 0:56 上午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='web.html'>web</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15116289970489.html">
+                
+                  <h1></h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/11/26 0:56 上午</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15116267412708.html">
+                
+                  <h1>阿里java手册学习笔记</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<ol>
+<li>【推荐】慎用 Object 的 clone 方法来拷贝对象。 说明:对象的 clone 方法默认是浅拷贝,若想实现深拷贝需要重写 clone 方法实现属性对象 的拷贝。</li>
+</ol>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/11/26 0:19 上午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Java.html'>Java</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15111037477403.html">
+                
+                  <h1>实现线程安全</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<ul>
+<li>最简单的方式，使用Synchronization关键字:Java Synchronization介绍</li>
+<li>使用java.util.concurrent.atomic 包中的原子类，例如 AtomicInteger</li>
+<li>使用java.util.concurrent.locks 包中的锁</li>
+<li>使用线程安全的集合ConcurrentHashMap</li>
+<li>使用volatile关键字，保证变量可见性（直接从内存读，而不是从线程cache读）</li>
+</ul>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/11/19 23:2 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Java.html'>Java</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15111021861492.html">
+                
+                  <h1>离线包</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>在Hybrid App中，需要频繁访问H5页面。要是每一次的页面请求都通过网络从远端拿的话，不但会消耗很多的用户流量，而且在网络不好（2G、3G）的时候会有巨大的延迟。<br/>
+如何解决？ --&gt; 把H5页面直接放到app包里面，随版本发布，每次请求页面都从本地拿。<br/>
+是的，早就有人这么做了。天猫、淘宝APP越来越大的安装包体积，原因之一就是放入了越来越多的H5资源。不过这个方法有局限性：<br/>
+<strong>第一，安装包体积不能无限增大；<br/>
+第二，APP发版之后web资源需要更新怎么办？</strong><br/>
+所以这个方法只适用于存储一些基本不怎么变的web资源。</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/11/19 22:36 下午</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='App.html'>App</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
 			<div class="article">
                 <a class="clearlink" href="15104861536939.html">
                 
@@ -137,7 +729,7 @@
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2017/11/12</span>
+                    <span class="date">2017/11/12 19:29 下午</span>
                     
           				   
                   </div>
@@ -180,7 +772,7 @@ public class Test {
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2017/11/12</span>
+                    <span class="date">2017/11/12 16:54 下午</span>
                     
           				   
                   </div>
@@ -218,7 +810,7 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
                 <div class="read-more clearfix">
                   <div class="more-left left">
                    <a href="15104116143325.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/11/11</span>
+                    <span class="date">2017/11/11 22:46 下午</span>
                     
           				   
                   </div>
@@ -283,6 +875,14 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
                 <div class="side-content">
 
       	<p class="cat-list">
+        
+            <a href="App.html"><strong>App</strong></a>
+        
+            <a href="Java.html"><strong>Java</strong></a>
+        
+            <a href="web.html"><strong>web</strong></a>
+        
+            <a href="database.html"><strong>database</strong></a>
          
         </p>
 
@@ -299,21 +899,59 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
 	      
 		      
 			      <li class="post">
-			        <a href="15104861536939.html">java collection</a>
+			        <a href="15138716544733.html"></a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15104768768350.html">JSON处理</a>
+			        <a href="15136974753892.html">soa架构</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15104116143325.html">Markdown 语法和 MWeb 写作使用说明</a>
+			        <a href="15136109654646.html">mysql基础</a>
 			      </li>
 		     
+		  
+		      
+			      <li class="post">
+			        <a href="15134776307388.html">mysql优化</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15134373686469.html">？？</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
 		   
 		  		</ul>
                 </div>
